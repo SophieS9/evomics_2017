@@ -3,8 +3,8 @@
   vars:
     - source_dir: /home/ubuntu/software/.source
     - software_dir: /home/ubuntu/software
-    - mysql_root_pass: '*522F526859693BE4EBF948CA2FC0A25326CFD84E'
-    - master_password: '$6$vaUtdo8oSgvGmBNO$B/0gxyOCv5b1DWGaiOTBUdZdHW5nrXZhUNw1yu8pVL5LS8Hs3DxL3/rD0aBEx9h7kNpDi73UZ3XYd7wpbXAx90'
+    - mysql_root_pass: '*8D83C3E400655750A979537D874684E16BF8EEF8'
+    - master_password: '$6$1HrYIGOjt20w606$L6FXlalZQ1tfrH9KTYD/dOXsWycQ5aj6wSZSNSACT3dWj.IEavrNZ0MYSVjNsS7HTag1OdWtVGnoeLAuCBWKa1'
 
   pre_tasks:
     # Create Directories
