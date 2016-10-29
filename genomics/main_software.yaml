@@ -269,16 +269,16 @@
     ## Previously Installed
     # MySQL (MariaDB) in Base Install
 
-    - name: Installing Stacks Dependencies
-      apt: name={{item}} state=present
-      with_items:
-       - libdbd-mysql-perl
-       - libsparsehash-dev
-       - php7.0
-       - php7.0-mysql
-       - python-mysqldb
-       - libspreadsheet-writeexcel-perl
-      tags: radseq, stacks
+    #- name: Installing Stacks Dependencies
+    # apt: name={{item}} state=present
+    #  with_items:
+    #	- libdbd-mysql-perl
+    #   -libsparsehash-dev
+    #   - php7.0
+    #   - php7.0-mysql
+    #   - python-mysqldb
+    #   - libspreadsheet-writeexcel-perl
+    #  tags: radseq, stacks
  
     #- include: software_tasks/stacks.yaml version=1.43
     #  tags: radseq, stacks
