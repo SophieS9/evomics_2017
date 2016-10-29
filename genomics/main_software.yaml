@@ -14,7 +14,7 @@
   pre_tasks:
     # Set up the workshop user with a SHA-512 crypted password using mkpasswd
     - name: Create {{workshop_user}} Workshop User
-      user: name="{{workshop_user}}" group=workshop comment="{{workshop_user}} Workshop User" state=present shell=/bin/bash password={{genomics_user_password}}
+      user: name="{{workshop_user}}" group=workshop comment="{{workshop_user}} Workshop User state=present shell=/bin/bash password={{genomics_user_password}}
       
     # Create genomics user Software Directories
     - name: Create Software Dir
