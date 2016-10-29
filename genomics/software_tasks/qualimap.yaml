@@ -9,9 +9,20 @@
     creates="{{software_dir}}/qualimap_v{{version}}/qualimap"
     
 - name: Adding Qualimap to PATH
-  lineinfile: dest="/home/{{workshop_user}}/.bash_profile"
+  lineinfile: dest="/home/{{workshop_user}}/.bash_paths"
               backrefs=yes
               backup=yes
               regexp="PATH=((?!.*?/home/{{workshop_user}}/software/qualimap_v2.2).*?)$"
               line="PATH=\1:/home/{{workshop_user}}/software/qualimap_v2.2"
 
+- name: Installing optparse
+  shell: "{{playbook_dir}}/scripts/install.r optparse"
+
+- name: Installing Bioconductor
+  shell: Rscript -e "source('http://bioconductor.org/biocLite.R');biocLite()"
+
+- name: Installing NOISeq via Bioconductor
+  shell: Rscript -e "source('http://bioconductor.org/biocLite.R');biocLite('NOISeq')"
+
+- name: Installing Repitools via Bioconductor
+  shell: Rscript -e "source('http://bioconductor.org/biocLite.R');biocLite('Repitools')"
