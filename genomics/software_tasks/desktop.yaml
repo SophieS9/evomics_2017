@@ -1,7 +1,7 @@
 ## Desktop Background
 
 - name: Copying Desktop Background
-  copy: src="{{playbook_dir}}/files/desktop_background.jpg" dest="/home/{{workshop_user}}/.desktop_background.jpg" mode=0755
+  copy: src="{{playbook_dir}}/files/Logo_v2.png" dest="/home/{{workshop_user}}/.desktop_background.jpg" mode=0755
   become: true
   become_user: "{{workshop_user}}"
  
