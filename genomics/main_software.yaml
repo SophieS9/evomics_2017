@@ -2,6 +2,7 @@
   become: yes
   vars:
     - workshop_user: genomics
+    - host: harvard_ami
     - source_dir: "/home/{{workshop_user}}/software/.source"
     - software_dir: "/home/{{workshop_user}}/software"
     - workshop_dir: "/home/{{workshop_user}}/workshop_materials"
@@ -37,12 +38,12 @@
     - include: software_tasks/profile.yaml
       tags: alias, profile
     
-    - name: Changing hostname to "{{workshop_user}}"
-      lineinfile: dest=/etc/hostname regexp="^ip.*" line="{{workshop_user}}"
+    - name: Changing hostname to "{{host}}"
+      lineinfile: dest=/etc/hostname regexp="^ip.*" line="{{host}}"
       tags: hostname
 
-    - name: Changing hosts to "{{workshop_user}}"
-      lineinfile: dest=/etc/hosts regexp="^127.*" line="127.0.0.1 localhost {{workshop_user}}"
+    - name: Changing hosts to "{{host}}"
+      lineinfile: dest=/etc/hosts regexp="^127.*" line="127.0.0.1 localhost {{host}}"
       tags: hostname
 
     - include: software_tasks/motd.yaml
@@ -73,7 +74,7 @@
     
     # Conda for Python 2.7
     #- include: software_tasks/conda.yaml version=2 prefix=/home/genomics/miniconda
-    #  tags: general, conda, qiime, qiime2
+     # tags: general, conda, qiime, qiime2
 
     # Conda for Python 3.0
     - include: software_tasks/conda.yaml version=3 prefix=/home/genomics/miniconda
