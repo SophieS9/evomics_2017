@@ -55,3 +55,32 @@ To launch:
 ```
 HYPHYMP
 ```
+
+## HIV Trace 
+Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace). This is currently not working.
+
+Dependencies:
+* tn93
+```
+wget https://github.com/veg/tn93/archive/v1.0.3.tar.gz
+tar -xzvf v1.0.3.tar.gz
+cd tn93-1.0.3
+cmake [-DCMAKE_INSTALL_PREFIX=/install/path DEFAULT /usr/local/] ./
+sudo make install
+```
+* pip3
+```
+sudo apt install python3-pip
+```
+* numpy
+```
+pip3 install numpy
+```
+* biopython
+pip3 install biopython
+```
+
+To install HIV Trace (this fails):
+```
+pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
+```
