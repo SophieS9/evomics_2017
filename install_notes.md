@@ -4,6 +4,15 @@ Software installed (and commands run) specific for the Harvard Workshop 2016.
 ## ANVI'O
 Install instructions were followed from [ANVI'O WEBSITE] (http://merenlab.org/software/anvio/).
 
+Dependencies:
+*Prodigal (installed already)
+*HMMER (installed already)
+*sqlite (installed already)
+*numpy (installed)
+*GSL
+*Cython
+*hdf5
+
 ## HyPhy (version 2.3.0)
 Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy). Installed pthreads option for multiprocessing. This still needs testing with data. 
 
