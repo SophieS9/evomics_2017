@@ -77,10 +77,11 @@ sudo apt install python3-pip
 pip3 install numpy
 ```
 * biopython
+```
 pip3 install biopython
 ```
 
-To install HIV Trace (this fails):
+To install HIV Trace (this fails):`
 ```
 pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
 ```
