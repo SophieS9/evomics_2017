@@ -1,5 +1,9 @@
-# Evomics 2017
-Instructions and notes for creating the AMIs for the [evomics.org](http://evomics.org) Workshops 2017 and information on the previous years' AMIs in [previous_workflow.md](https://github.com/guyleonard/evomics_2017/blob/master/previous_workflow.md).
+# Harvard Workshop on Microbial Genomics 2016
+Instructions and notes for creating the AMI for the [evomics.org](http://evomics.org) Harvard Workshop 2016 and information on the previous years' AMIs in [previous_workflow.md](https://github.com/guyleonard/evomics_2017/blob/master/previous_workflow.md).
+
+This repository has been forked from Guy Leonard's Evomics 2017 repository (http://github.com/guyleonard/evomics_2017). Minor modifications have been made for the Harvard 2016 Workshop, but the majority of the content, including this README is identical to the original repository. 
+
+Install notes for additional software added for Harvard 2016 can be found in: ADD FILE!
 
 ## Preamble
 For the past two years I have created the AMIs for the Workshop on Genomics a couple of weeks prior to the workshops beginning - usually in my Christmas holiday and also during the Faculty set up week. This year I want to try and get the building of the AMI to be as automated as possible ahead of the workshop. This will also allow students, faculty, PIs, etc, to build/alter their own copies for future workshops, training or personal use. If you plan to make changes for your own use, I highly suggest forking this repository and making changes to your copy (as you will have to supply your own crypted passwords etc). I am happy to accept pull requests for software bugs, updates, fixes, additions etc.
