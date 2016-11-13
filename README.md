@@ -1,7 +1,7 @@
 # Harvard Workshop on Microbial Genomics 2016
 Instructions and notes for creating the AMI for the [evomics.org](http://evomics.org) Harvard Workshop 2016 and information on the previous years' AMIs in [previous_workflow.md](https://github.com/guyleonard/evomics_2017/blob/master/previous_workflow.md).
 
-This repository has been forked from Guy Leonard's Evomics 2017 repository (http://github.com/guyleonard/evomics_2017). Minor modifications have been made for the Harvard 2016 Workshop, but the majority of the content, including this README is identical to the original repository. 
+This repository has been forked from Guy Leonard's Evomics 2017 repository (https://github.com/guyleonard/evomics_2017). Minor modifications have been made for the Harvard 2016 Workshop, but the majority of the content, including this README is identical to the original repository. At the time of forking, the set up for the Phylogenomics workshop was incomplete, and this repository reflects that. 
 
 Install notes for additional software added for Harvard 2016 can be found in: ADD FILE!
 
