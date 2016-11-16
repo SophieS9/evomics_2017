@@ -56,8 +56,8 @@ To launch:
 HYPHYMP
 ```
 
-## HIV Trace 
-Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace). This is currently not working.
+## HIV-TRACE 
+Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace).
 
 Dependencies:
 * tn93
@@ -81,7 +81,7 @@ pip3 install numpy
 pip3 install biopython
 ```
 
-To install HIV Trace (this fails):`
+To install HIV-TRACE:`
 ```
 pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
 ```
