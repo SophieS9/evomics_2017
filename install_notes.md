@@ -95,4 +95,35 @@ jupyter notebook --generate-config
 ```
 
 Then edited the IP address lines to:
+```
 c.NotebookApp.ip='*'
+```
+
+## GATB (version 1.171)
+Install instructions were followed from the [GATB Github] (https://github.com/GATB/gatb-minia-pipeline)
+
+Dependencies:
+```
+sudo pip install mathstats
+sudo pip install pysam==0.8.3
+sudo pip install pyfasta
+```
+
+To install GATB:
+```
+wget http://gatb-pipeline.gforge.inria.fr/versions/bin/gatb-pipeline-1.171.tar.gz 
+```
+And then need to copy all of the directories and the binary to /usr/bin:
+```
+sudo cp gatb /usr/bin
+sudo cp -r bloocoo/ /usr/bin
+sudo cp -r BEEST/ /usr/bin
+sudo cp -r tools/ /usr/bin
+sudo cp -r minia/ /usr/bin
+```
+
+Finally whilst logged in as genomics:
+```
+su master
+sudo pip install networkx
+```
