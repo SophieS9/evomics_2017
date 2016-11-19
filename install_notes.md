@@ -112,6 +112,7 @@ sudo pip install pyfasta
 To install GATB:
 ```
 wget http://gatb-pipeline.gforge.inria.fr/versions/bin/gatb-pipeline-1.171.tar.gz 
+tar -xzvf gatb-pipeline-1.171.tar.gz
 ```
 And then need to copy all of the directories and the binary to /usr/bin:
 ```
@@ -127,3 +128,14 @@ Finally whilst logged in as genomics:
 su master
 sudo pip install networkx
 ```
+
+##Updating tbl2asn (for PROKKA)
+Downloaded latest version, unpackaged, renamed and moved to /usr/bin/.
+```
+wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/linux64.tbl2asn.gz
+gunzip linux64.tbl2asn.gz
+mv linux64.tbl2asn tbl2asn
+sudo chmod +x tbl2asn
+sudo mv tbl2asn /usr/bin/
+```
+
