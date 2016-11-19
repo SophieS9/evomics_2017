@@ -81,7 +81,18 @@ pip3 install numpy
 pip3 install biopython
 ```
 
-To install HIV-TRACE:`
+To install HIV-TRACE:
 ```
 pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
 ```
+
+## Jupyter Configuration for QIIME Workshop
+Needed to set up the Jupyter configuration to allow the jupyter notebook to be viewed externally.
+
+Whilst logged in as genomics, created the configuration file:
+```
+jupyter notebook --generate-config
+```
+
+Then edited the IP address lines to:
+c.NotebookApp.ip='*'
