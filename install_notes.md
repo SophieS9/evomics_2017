@@ -139,3 +139,29 @@ sudo chmod +x tbl2asn
 sudo mv tbl2asn /usr/bin/
 ```
 
+##SRA toolkit (version 2.8.0)
+Downloaded binaries for latest version, unpackaged and copied to /usr/bin/.
+```
+wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.0/sratoolkit.2.8.0-ubuntu64.tar.gz
+tar -xzvf sratoolkit.2.8.0-ubuntu64.tar.gz
+cd sratoolkit.2.8.0-ubuntu64
+sudo cp bin/* /usr/bin/
+```
+
+##PILON (version 1.2.0)
+Downloaded latest jar file and copied to /usr/bin/.
+```
+wget https://github.com/broadinstitute/pilon/releases/download/v1.20/pilon-1.20.jar 
+sudo cp pilon-1.20.jar /usr/bin
+```
+
+##VCFannotator 
+Downloaded, unpackaged and moved executable and dependencies to /usr/bin/.
+```
+wget https://sourceforge.net/projects/vcfannotator/files/vcfannotator_r2013-10-13.tgz/download
+tar -xzvf download
+cd vcfannotator_r2013-10-13
+sudo cp VCF_annotator.pl /usr/bin/
+sudo cp -r PerlLib /usr/bin
+sudo cp Util/* /usr/bin
+```
