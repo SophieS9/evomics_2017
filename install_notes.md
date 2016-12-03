@@ -165,3 +165,14 @@ sudo cp VCF_annotator.pl /usr/bin/
 sudo cp -r PerlLib /usr/bin
 sudo cp Util/* /usr/bin
 ```
+
+##Reducevcf (version 12)
+Downloaded, unpackaced and moved jar files to /usr/bin.
+```
+wget http://www.genomeview.org/jenkins/reducevcf-nightly/reducevcf-12.zip
+unzip reducevcf-12.zip
+sudo mv ajt-2.10.jar /usr/bin/
+sudo mv ark-43.jar /usr/bin/
+sudo mv scala-library.jar /usr/bin/
+sudo mv reducevcf.jar /usr/bin/
+```
