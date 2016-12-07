@@ -43,14 +43,17 @@ Install instructions were followed from [HyPhy Github] (https://github.com/veg/h
 
 Commands run:
 ```
-wget https://github.com/veg/hyphy/archive/2.3.0-alpha.tar.gz
-tar -xzvf 2.3.0-alpha.tar.gz
-cd hyphy-2.3.0-alpha
+git clone https://github.com/veg/hyphy.git
+cd hyphy
+git checkout v2.3-stable
 cmake ./
-make MP2
+make HYPHY
 sudo make install
 ```
-
+Tested the install by (from within hyphy):
+```
+HYPHYMP tests/hbltests/libv3/SLAC-partitioned.wbf
+```
 To launch:
 ```
 HYPHYMP
@@ -84,6 +87,20 @@ pip3 install biopython
 To install HIV-TRACE:
 ```
 pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
+```
+
+##Hyphy-vision
+Install of a local version of Hyphy-vision in instances where there are internet issues. 
+
+As genomics user, download by:
+```
+git clone https://github.com/veg/hyphy-vision
+cd hyphy-vision
+git checkout gh-pages
+```
+To then launch the application (from within hyphy-vision):
+```
+python -m SimpleHTTPServer 8000
 ```
 
 ## Jupyter Configuration for QIIME Workshop
