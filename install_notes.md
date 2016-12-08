@@ -38,21 +38,17 @@ Install tested with
 anvi-self-test
 ```
  
-## HyPhy (version 2.3.0)
-Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy). Installed pthreads option for multiprocessing. This still needs testing with data. 
+## HyPhy (version 2.2.7)
+Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy). Installed pthreads option for multiprocessing.
 
 Commands run:
 ```
 git clone https://github.com/veg/hyphy.git
 cd hyphy
-git checkout v2.3-stable
+git checkout 2.2.7
 cmake ./
 make HYPHY
 sudo make install
-```
-Tested the install by (from within hyphy):
-```
-HYPHYMP tests/hbltests/libv3/SLAC-partitioned.wbf
 ```
 To launch:
 ```
