@@ -8,7 +8,7 @@ Dependencies:
 * Prodigal (installed already)
 * HMMER (installed already)
 * sqlite (installed already)
-* numpy (installed)
+* numpy (installed already)
 * GSL
 ```
 wget ftp://ftp.gnu.org/gnu/gsl/gsl-latest.tar.gz
@@ -39,7 +39,7 @@ anvi-self-test
 ```
  
 ## HyPhy (version 2.2.7)
-Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy). Installed pthreads option for multiprocessing.
+Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy) and personal communication with Steven Weaver. Installed pthreads option for multiprocessing.
 
 Commands run:
 ```
@@ -56,7 +56,7 @@ HYPHYMP
 ```
 
 ## HIV-TRACE 
-Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace).
+Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace) and personal communications with Steven Weaver.
 
 Dependencies:
 * tn93
@@ -86,9 +86,9 @@ pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-depe
 ```
 
 ##Hyphy-vision
-Install of a local version of Hyphy-vision in instances where there are internet issues. 
+Install of a local version of Hyphy-vision in instances where there are internet issues. Install instructions from personal communication with Steven Weaver.
 
-As genomics user, download by:
+As genomics user, download:
 ```
 git clone https://github.com/veg/hyphy-vision
 cd hyphy-vision
@@ -180,7 +180,7 @@ sudo cp Util/* /usr/bin
 ```
 
 ##Reducevcf (version 12)
-Downloaded, unpackaced and moved jar files to /usr/bin.
+Downloaded, unpackaged and moved jar files to /usr/bin.
 ```
 wget http://www.genomeview.org/jenkins/reducevcf-nightly/reducevcf-12.zip
 unzip reducevcf-12.zip
