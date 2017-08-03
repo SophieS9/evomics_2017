@@ -2,7 +2,7 @@
 Software installed (and commands run) specific for the Harvard Workshop 2016. 
 
 ## ANVI'O (version 2.0.2)
-Install instructions were followed from [ANVI'O WEBSITE] (http://merenlab.org/software/anvio/).
+Install instructions were followed from [ANVI'O WEBSITE](http://merenlab.org/software/anvio/).
 
 Dependencies:
 * Prodigal (installed already)
