@@ -39,7 +39,7 @@ anvi-self-test
 ```
  
 ## HyPhy (version 2.2.7)
-Install instructions were followed from [HyPhy Github] (https://github.com/veg/hyphy) and personal communication with Steven Weaver. Installed pthreads option for multiprocessing.
+Install instructions were followed from [HyPhy Github](https://github.com/veg/hyphy) and personal communication with Steven Weaver. Installed pthreads option for multiprocessing.
 
 Commands run:
 ```
@@ -56,7 +56,7 @@ HYPHYMP
 ```
 
 ## HIV-TRACE 
-Install instructions were followed from [HIV Trace Github] (https://github.com/veg/hivtrace) and personal communications with Steven Weaver.
+Install instructions were followed from [HIV Trace Github](https://github.com/veg/hivtrace) and personal communications with Steven Weaver.
 
 Dependencies:
 * tn93
@@ -85,7 +85,7 @@ To install HIV-TRACE:
 pip3 install https://github.com/veg/hivtrace/archive/0.2.0.tar.gz --process-dependency-links
 ```
 
-##Hyphy-vision
+## Hyphy-vision
 Install of a local version of Hyphy-vision in instances where there are internet issues. Install instructions from personal communication with Steven Weaver.
 
 As genomics user, download:
@@ -113,7 +113,7 @@ c.NotebookApp.ip='*'
 ```
 
 ## GATB (version 1.171)
-Install instructions were followed from the [GATB Github] (https://github.com/GATB/gatb-minia-pipeline)
+Install instructions were followed from the [GATB Github](https://github.com/GATB/gatb-minia-pipeline)
 
 Dependencies:
 ```
@@ -142,7 +142,7 @@ su master
 sudo pip install networkx
 ```
 
-##Updating tbl2asn (for PROKKA)
+## Updating tbl2asn (for PROKKA)
 Downloaded latest version, unpackaged, renamed and moved to /usr/bin/.
 ```
 wget ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/linux64.tbl2asn.gz
@@ -152,7 +152,7 @@ sudo chmod +x tbl2asn
 sudo mv tbl2asn /usr/bin/
 ```
 
-##SRA toolkit (version 2.8.0)
+## SRA toolkit (version 2.8.0)
 Downloaded binaries for latest version, unpackaged and copied to /usr/bin/.
 ```
 wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.8.0/sratoolkit.2.8.0-ubuntu64.tar.gz
@@ -161,14 +161,14 @@ cd sratoolkit.2.8.0-ubuntu64
 sudo cp bin/* /usr/bin/
 ```
 
-##PILON (version 1.2.0)
+## PILON (version 1.2.0)
 Downloaded latest jar file and copied to /usr/bin/.
 ```
 wget https://github.com/broadinstitute/pilon/releases/download/v1.20/pilon-1.20.jar 
 sudo cp pilon-1.20.jar /usr/bin
 ```
 
-##VCFannotator 
+## VCFannotator 
 Downloaded, unpackaged and moved executable and dependencies to /usr/bin/.
 ```
 wget https://sourceforge.net/projects/vcfannotator/files/vcfannotator_r2013-10-13.tgz/download
@@ -179,7 +179,7 @@ sudo cp -r PerlLib /usr/bin
 sudo cp Util/* /usr/bin
 ```
 
-##Reducevcf (version 12)
+## Reducevcf (version 12)
 Downloaded, unpackaged and moved jar files to /usr/bin.
 ```
 wget http://www.genomeview.org/jenkins/reducevcf-nightly/reducevcf-12.zip
